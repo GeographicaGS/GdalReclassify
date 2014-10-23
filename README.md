@@ -20,6 +20,16 @@ Usage
 
 bootstrap.py
 
+```
+src_file = 'source_rasterfile.tif'
+dst_file = 'destination_rasterfile.tif'
+in_classes = ['<-64.0', '<-60.0', '<-56.0', '<-52.0', '<-48.0', '<-44.0', '<-40.0', '<100.0']
+out_classes = ['1', '2', '3', '4', '5', '6', '7', '8']
+
+gr = GdalReclassify(src_file, dst_file)
+gr.processDataset(in_classes, out_classes, default=False, nodata=[], output_format='GTiff', compress_type=['COMPRESS=None'])
+```
+
 
 Notes:
 ------
