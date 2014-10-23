@@ -24,8 +24,8 @@ compress_type: 'COMPRESS = LZW','COMPRESS = PACKBITS','COMPRESS = DEFLATE','COMP
 """
 
 
-src_file = '/home/cayetano/Descargas/test_grib2vector/tiff_data/20140618033813_9164_YTXE27EGRR180000_.tif'
-dst_file = '/home/cayetano/Descargas/test_grib2vector/20140618033813_9164_YTXE27EGRR180000_reclass2.tif'
+src_file = 'source_rasterfile.tif'
+dst_file = 'destination_rasterfile.tif'
 in_classes = ['<-64.0', '<-60.0', '<-56.0', '<-52.0', '<-48.0', '<-44.0', '<-40.0', '<100.0']
 out_classes = ['1', '2', '3', '4', '5', '6', '7', '8']
 
